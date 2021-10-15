@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "glasschest",
+  "version": "${version}",
+  "name": "Glasschest",
+  "description": "",
+  "authors": [
+    "toliner"
+  ],
+  "contact": {},
+  "license": "MPL-2.0",
+  "icon": "assets/glasschest/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.toliner.glasschest.client.GlassChestModClient"
+      }
+    ],
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.toliner.glasschest.GlassChestMod"
+      }
+    ]
+  },
+  "mixins": [
+    "glasschest.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1",
+    "fabric-language-kotlin": ">=1.6.3+kotlin.1.5.21",
+    "libblockattributes_core": ">=0.8.4",
+    "libblockattributes_items": ">=0.8.4"
+  }
+}
